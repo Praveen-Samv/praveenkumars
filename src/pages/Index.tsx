@@ -2,7 +2,7 @@ import { Motion } from "@/components/Motion";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { SkillCard } from "@/components/SkillCard";
-import { Github, Mail, Phone } from "lucide-react";
+import { Github, Mail, Phone, GraduationCap } from "lucide-react";
 
 const Index = () => {
   return (
@@ -83,8 +83,32 @@ const Index = () => {
           </Motion>
         </section>
 
-        {/* Skills */}
+        {/* Education */}
         <section className="container px-4 py-16">
+          <SectionTitle subtext="Academic Background">Education</SectionTitle>
+          <Motion>
+            <div className="max-w-3xl mx-auto">
+              <div className="p-6 glass-card rounded-xl hover-lift">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-full">
+                    <GraduationCap className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">
+                      Master of Technology (M.Tech)
+                    </h3>
+                    <p className="text-accent mb-2">JNTU Anantapur</p>
+                    <p className="text-sm text-accent">Graduated in 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Motion>
+        </section>
+
+        {/* Skills */}
+        <section className="container px-4 py-16 relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent"></div>
           <SectionTitle subtext="Expertise">Technical Skills</SectionTitle>
           <div className="grid gap-6 md:grid-cols-2">
             <SkillCard
