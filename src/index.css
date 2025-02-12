@@ -54,12 +54,27 @@
 
 .glass-card {
   @apply bg-white/80 backdrop-blur-md border border-white/20;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
 }
 
 .hover-lift {
-  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  @apply transition-all duration-300 hover:-translate-y-1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover-lift:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
 }
 
 .skill-tag {
-  @apply px-3 py-1 text-sm bg-white/90 rounded-full transition-all duration-300 hover:bg-primary hover:text-white transform hover:scale-105;
+  @apply px-3 py-1 text-sm bg-white/90 rounded-full transition-all duration-300 hover:bg-primary hover:text-white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transform: translateY(0);
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

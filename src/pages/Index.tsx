@@ -1,3 +1,4 @@
+
 import { Motion } from "@/components/Motion";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -7,7 +8,7 @@ import { Github, Mail, Phone, GraduationCap } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen relative">
-      <div className="absolute inset-0 bg-black/10 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/20 backdrop-blur-[2px]" />
       <div className="relative">
         {/* Hero Section */}
         <section className="container px-4 pt-32 pb-16">
@@ -16,7 +17,7 @@ const Index = () => {
               <span className="inline-block px-3 py-1 mb-4 text-sm font-medium tracking-wider text-primary bg-primary/10 glass-card rounded-full hover-lift">
                 Software Developer
               </span>
-              <h1 className="mb-6 text-5xl font-bold tracking-tight">
+              <h1 className="mb-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
                 T Praveen Kumar
               </h1>
               <p className="mb-8 text-xl text-accent">
@@ -50,7 +51,7 @@ const Index = () => {
         <section className="container px-4 py-16">
           <SectionTitle subtext="About Me">Professional Summary</SectionTitle>
           <Motion>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl mx-auto glass-card p-8 rounded-xl">
               <ul className="space-y-4 text-lg">
                 <li className="flex items-start gap-2">
                   <span className="mt-2 w-1 h-1 bg-primary rounded-full" />
@@ -88,17 +89,17 @@ const Index = () => {
           <SectionTitle subtext="Academic Background">Education</SectionTitle>
           <Motion>
             <div className="max-w-3xl mx-auto">
-              <div className="p-6 glass-card rounded-xl hover-lift">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <GraduationCap className="w-6 h-6 text-primary" />
+              <div className="p-8 glass-card rounded-xl hover-lift">
+                <div className="flex items-start gap-6">
+                  <div className="p-4 bg-primary/10 rounded-full">
+                    <GraduationCap className="w-8 h-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">
+                    <h3 className="text-2xl font-semibold mb-3">
                       Master of Technology (M.Tech)
                     </h3>
-                    <p className="text-accent mb-2">JNTU Anantapur</p>
-                    <p className="text-sm text-accent">Graduated in 2022</p>
+                    <p className="text-lg text-accent mb-2">JNTU Anantapur</p>
+                    <p className="text-sm text-accent/80">Graduated in 2022</p>
                   </div>
                 </div>
               </div>
@@ -108,9 +109,9 @@ const Index = () => {
 
         {/* Skills */}
         <section className="container px-4 py-16 relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
           <SectionTitle subtext="Expertise">Technical Skills</SectionTitle>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2">
             <SkillCard
               title="Languages & Frameworks"
               items={[
@@ -145,7 +146,7 @@ const Index = () => {
         {/* Projects */}
         <section className="container px-4 py-16">
           <SectionTitle subtext="Experience">Projects</SectionTitle>
-          <div className="grid gap-6">
+          <div className="grid gap-8">
             <ProjectCard
               title="InstaRide"
               duration="June 2024 - Nov 2024"
@@ -182,14 +183,14 @@ const Index = () => {
             <div className="flex flex-col items-center gap-4">
               <a
                 href="mailto:praveenkumardev152@gmail.com"
-                className="flex items-center gap-2 text-lg hover:text-primary"
+                className="flex items-center gap-2 text-lg hover:text-primary transition-colors duration-300"
               >
                 <Mail size={20} />
                 praveenkumardev152@gmail.com
               </a>
               <a
                 href="tel:+918142916065"
-                className="flex items-center gap-2 text-lg hover:text-primary"
+                className="flex items-center gap-2 text-lg hover:text-primary transition-colors duration-300"
               >
                 <Phone size={20} />
                 +91 8142916065
