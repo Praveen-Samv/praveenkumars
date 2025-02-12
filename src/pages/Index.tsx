@@ -14,10 +14,10 @@ const Index = () => {
         <section className="container px-4 pt-32 pb-16">
           <Motion>
             <div className="max-w-3xl mx-auto text-center">
-              <span className="inline-block px-3 py-1 mb-4 text-sm font-medium tracking-wider text-primary bg-primary/10 glass-card rounded-full hover-lift">
+              <span className="inline-block px-3 py-1 mb-4 text-lg font-medium tracking-wider text-primary bg-primary/10 glass-card rounded-full hover-lift">
                 Software Developer
               </span>
-              <h1 className="mb-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+              <h1 className="mb-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary text-white to-primary/70">
                 T Praveen Kumar
               </h1>
               <p className="mb-8 text-xl text-accent">
@@ -49,7 +49,7 @@ const Index = () => {
 
         {/* Professional Summary */}
         <section className="container px-4 py-16">
-          <SectionTitle subtext="About Me">Professional Summary</SectionTitle>
+          <SectionTitle subtext="About Me" >Professional Summary</SectionTitle>
           <Motion>
             <div className="max-w-3xl mx-auto glass-card p-8 rounded-xl">
               <ul className="space-y-4 text-lg">
