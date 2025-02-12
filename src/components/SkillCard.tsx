@@ -10,14 +10,11 @@ interface SkillCardProps {
 export const SkillCard = ({ title, items, delay = 0 }: SkillCardProps) => {
   return (
     <Motion delay={delay}>
-      <div className="p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300">
+      <div className="p-6 glass-card rounded-xl hover-lift">
         <h3 className="mb-4 text-xl font-semibold">{title}</h3>
         <div className="flex flex-wrap gap-2">
           {items.map((item, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 text-sm bg-secondary rounded-full"
-            >
+            <span key={index} className="skill-tag">
               {item}
             </span>
           ))}

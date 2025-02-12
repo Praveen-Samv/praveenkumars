@@ -20,15 +20,15 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Motion delay={delay}>
-      <div className="p-6 transition-all duration-300 bg-white rounded-xl hover:shadow-lg">
+      <div className="p-6 glass-card rounded-xl hover-lift">
         <div className="flex flex-col gap-4">
           <div className="space-y-2">
             <h3 className="text-2xl font-semibold tracking-tight">{title}</h3>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-sm bg-secondary rounded-full">
+              <span className="skill-tag">
                 {duration}
               </span>
-              <span className="px-3 py-1 text-sm bg-secondary rounded-full">
+              <span className="skill-tag">
                 {platform}
               </span>
             </div>
