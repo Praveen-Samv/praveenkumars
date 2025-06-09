@@ -21,13 +21,13 @@ const Index = () => {
                 T Praveen Kumar
               </h1>
               <p className="mb-8 text-xl text-accent">
-                Forward-thinking software developer with 2+ years of experience in
-                JavaScript, React, and Node.js, passionate about creating elegant
+                Forward-thinking software developer with 3+ years of experience in
+                JavaScript, React, Node.js and Python, passionate about creating elegant
                 solutions to complex problems.
               </p>
               <div className="flex justify-center gap-4">
                 <a
-                  href="mailto:praveenkumardev152@gmail.com"
+                  href="mailto:praveenkumardev099@gmail.com"
                   className="inline-flex items-center gap-2 px-4 py-2 font-medium transition-all duration-300 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 hover-lift"
                 >
                   <Mail size={18} />
@@ -56,7 +56,7 @@ const Index = () => {
                 <li className="flex items-start gap-2">
                   <span className="mt-2 w-1 h-1 bg-primary rounded-full" />
                   <span>
-                    Professional programming experience in React.js, Node.js, and
+                    Professional programming experience in React.js, Node.js, Python and
                     modern frameworks
                   </span>
                 </li>
@@ -99,7 +99,7 @@ const Index = () => {
                       Master of Technology (M.Tech)
                     </h3>
                     <p className="text-lg text-accent mb-2">JNTU Anantapur</p>
-                    <p className="text-sm text-accent/80">Graduated in 2022</p>
+                    <p className="text-sm text-accent/80">Post-Graduated in 2022</p>
                   </div>
                 </div>
               </div>
@@ -137,6 +137,7 @@ const Index = () => {
                 "Sequelize",
                 "Microservices",
                 "REST APIs",
+                "Flask"
               ]}
               delay={0.2}
             />
@@ -170,6 +171,8 @@ const Index = () => {
                 "Developed web pages with complete backend integration",
                 "Worked as an AI trainee agent",
                 "Collaborated with UI/UX designers and clients",
+                "Invloved in calculation part for planets using python with flask-framework , I'm played major role for these calculations.",
+                "To developed web sit for the corp-astro business sit. "
               ]}
               delay={0.2}
             />
@@ -182,18 +185,18 @@ const Index = () => {
           <Motion>
             <div className="flex flex-col items-center gap-4">
               <a
-                href="mailto:praveenkumardev152@gmail.com"
+                href="mailto:praveenkumardev099@gmail.com"
                 className="flex items-center gap-2 text-lg hover:text-primary transition-colors duration-300"
               >
                 <Mail size={20} />
-                praveenkumardev152@gmail.com
+                praveenkumardev099@gmail.com
               </a>
               <a
-                href="tel:+918142916065"
+                href="tel:+917330995681"
                 className="flex items-center gap-2 text-lg hover:text-primary transition-colors duration-300"
               >
                 <Phone size={20} />
-                +91 8142916065
+                +91 7330995681
               </a>
             </div>
           </Motion>
